@@ -1,6 +1,26 @@
 .header {
-  background-color: red;
-  height: 200px;
-  width: 400px;
-  border: 2px solid black;
+  h1 {
+    color: #28455b;
+  }
+}
+
+.inputs {
+  margin-top: 50px;
+  display: flex;
+  input {
+    width: 80%;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  button {
+    margin-left: 5%;
+    padding: 30px 30px;
+    background-image: url("../assets/images/settings_logo.png");
+    background-size: contain;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
 }

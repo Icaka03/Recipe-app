@@ -1,0 +1,13 @@
+nav li {
+  list-style-type: none;
+  margin: 50px 0px;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #509e2f;
+}
+
+.nav-section {
+  padding: 30px 0px 0px 80px;
+}/*# sourceMappingURL=menu.css.map */
