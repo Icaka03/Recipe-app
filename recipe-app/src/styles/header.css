@@ -1,10 +1,11 @@
-.header h1 {
-  color: #28455b;
+.bck {
+  background-color: #f9f8fa;
 }
 
 .inputs {
   margin-top: 50px;
   display: flex;
+  justify-content: space-between;
 }
 .inputs input {
   width: 80%;
@@ -21,4 +22,21 @@
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
+}
+
+.recipes-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe {
+  width: 30%;
+  height: 150px;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.recipes-section h1 {
+  margin-top: 50px;
+  color: #28455b;
 }/*# sourceMappingURL=header.css.map */
