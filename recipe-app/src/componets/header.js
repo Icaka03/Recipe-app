@@ -5,7 +5,8 @@ export default function header() {
     <section className="bck">
       <div className="header">
         <div className="inputs">
-          <input placeholder="What do you want to cook today?" />
+          <i className="icon"></i>
+          <input placeholder="What do you want to cook today?"></input>
           <button></button>
         </div>
       </div>

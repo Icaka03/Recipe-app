@@ -15,6 +15,11 @@
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+  ::placeholder {
+    color: #d2d6da;
+    font-size: 20px;
+    padding-left: 50px;
+  }
   button {
     margin-left: 5%;
     padding: 30px 30px;
@@ -43,4 +48,12 @@
     margin-top: 50px;
     color: #28455b;
   }
+}
+
+.icon {
+  background-image: url("../assets/images/search_logo.png");
+  background-repeat: no-repeat;
+  padding: 20px;
+  position: absolute;
+  top: 56px;
 }

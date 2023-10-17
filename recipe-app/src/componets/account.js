@@ -4,7 +4,7 @@ export default function account() {
   return (
     <div className="account-info">
       <div>
-        <div className="icon"></div>
+        <div className="iconn"></div>
         <div>
           <h3>Hristo Dobrikov</h3>
           <p>User</p>
