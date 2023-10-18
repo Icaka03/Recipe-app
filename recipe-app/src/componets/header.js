@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/header.css";
+import Recipe from "../componets/recipe";
 export default function Header() {
   const [search, setSearch] = useState("");
   const [mymeal, setMeal] = useState();
@@ -27,28 +28,18 @@ export default function Header() {
           <button></button>
         </div>
       </div>
-      <div className="recipes-section">
-        <h1>Recommended Recipes</h1>
-        <div className="recipes-box">
-          <div className="recipe">
-            {mymeal == null ? (
-              <p>Not Found</p>
-            ) : (
-              mymeal.map((res) => {
-                return <p>Found</p>;
-              })
-            )}
-          </div>
-          <div className="recipe"></div>
-          <div className="recipe"></div>
-        </div>
-        <h1>Trending Recipes</h1>
-        <div className="recipes-box">
-          <div className="recipe"></div>
-          <div className="recipe"></div>
-          <div className="recipe"></div>
-        </div>
+
+      <h1>Recommended Recipes</h1>
+      <div className="recipes-box">
+        {mymeal == null ? (
+          <p>Not Found</p>
+        ) : (
+          mymeal.map((res) => {
+            return <Recipe data={res} />;
+          })
+        )}
       </div>
+      <h1>Trending Recipes</h1>
     </section>
   );
 }

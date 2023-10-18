@@ -39,13 +39,6 @@
   justify-content: space-between;
 }
 
-.recipe {
-  width: 30%;
-  height: 150px;
-  background-color: red;
-  border-radius: 20px;
-}
-
 .recipes-section h1 {
   margin-top: 50px;
   color: #28455b;
@@ -57,4 +50,14 @@
   padding: 20px;
   position: absolute;
   top: 56px;
+}
+
+.recipe {
+  width: 100%;
+  height: 150px;
+  background-color: red;
+  border-radius: 20px;
+}
+.recipe img {
+  width: 50%;
 }/*# sourceMappingURL=header.css.map */
