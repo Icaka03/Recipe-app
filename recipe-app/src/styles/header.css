@@ -37,6 +37,9 @@
 .recipes-box {
   display: flex;
   justify-content: space-between;
+  overflow: auto;
+  white-space: nowrap;
+  max-width: 100vh;
 }
 
 .recipes-section h1 {
@@ -53,10 +56,11 @@
 }
 
 .recipe {
-  width: 33%;
+  width: 250px;
   height: 250px;
   background-color: #ecf7d4;
   border-radius: 20px;
+  margin-right: 20px;
 }
 .recipe img {
   width: 90%;
@@ -75,7 +79,7 @@
 }
 
 .recipe-button {
-  padding: 15px 30px;
+  padding: 10px 20px;
   background-color: #d6f497;
   border: none;
   border-radius: 15px;
@@ -85,4 +89,14 @@
 .buttons {
   display: flex;
   justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  height: 15px;
+  width: 4px;
+  background: #d6e46c;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #39b54a;
 }/*# sourceMappingURL=header.css.map */
