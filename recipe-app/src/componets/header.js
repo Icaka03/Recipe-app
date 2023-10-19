@@ -29,7 +29,9 @@ export default function Header() {
         </div>
       </div>
 
-      <h1>Recommended Recipes</h1>
+      <h1 className="normal-color">Recommended Recipes</h1>
+      <div className="recipes-box"></div>
+      <h1 className="normal-color">Your search</h1>
       <div className="recipes-box">
         {mymeal == null ? (
           <p>Not Found</p>
@@ -39,7 +41,6 @@ export default function Header() {
           })
         )}
       </div>
-      <h1>Trending Recipes</h1>
     </section>
   );
 }
