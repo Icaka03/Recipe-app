@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/header.css";
 import Recipe from "../componets/recipe";
-import Recommended from "./recommended";
 export default function Header() {
   const [search, setSearch] = useState("");
   const [mymeal, setMeal] = useState();
@@ -33,7 +32,7 @@ export default function Header() {
   return (
     <section className="bck">
       <div className="header">
-        <div className="inputs">
+        <div className="inputs font-link">
           <i className="icon"></i>
           <input
             placeholder="What do you want to cook today?"
@@ -45,22 +44,19 @@ export default function Header() {
         </div>
       </div>
 
-      <h1 className="normal-color">Recommended Recipes</h1>
+      <h1 className="normal-color font-link">Recommended Recipes</h1>
       <div className="recipes-box recommended">
         {recommended.map((item) => {
-          item.quantity = 3;
-          return <Recommended data={item} />;
+          return <Recipe data={item} />;
         })}
         {recommended.map((item) => {
-          item.quantity = 3;
-          return <Recommended data={item} />;
+          return <Recipe data={item} />;
         })}
         {recommended.map((item) => {
-          item.quantity = 3;
-          return <Recommended data={item} />;
+          return <Recipe data={item} />;
         })}
       </div>
-      <h1 className="normal-color">Your search</h1>
+      <h1 className="normal-color font-link">Your search</h1>
       <div className="recipes-box">
         {mymeal == null ? (
           <p>Not Found</p>

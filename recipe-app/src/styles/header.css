@@ -98,4 +98,14 @@
 
 ::-webkit-scrollbar-thumb:horizontal {
   background: #39b54a;
+}
+
+.category {
+  top: -30px;
+  left: 25px;
+  background: #fff;
+  width: 35%;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
 }/*# sourceMappingURL=header.css.map */
