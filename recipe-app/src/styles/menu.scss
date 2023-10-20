@@ -3,6 +3,7 @@ nav {
     list-style-type: none;
     margin: 50px 0px;
     cursor: pointer;
+    display: flex;
   }
 }
 .logo {
@@ -13,4 +14,11 @@ nav {
 
 .nav-section {
   padding: 30px 0px 0px 80px;
+}
+
+.home {
+  background-image: url("../assets/images/home_icon.png");
+  width: 24px;
+  height: 24px;
+  background-size: cover;
 }

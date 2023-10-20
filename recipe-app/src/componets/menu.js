@@ -9,7 +9,10 @@ export default function menu() {
         </h1>
       </div>
       <nav>
-        <li>Home</li>
+        <li>
+          <div className="home"></div>
+          Home
+        </li>
         <li>Explore</li>
         <li>Favorites</li>
         <li>Help</li>

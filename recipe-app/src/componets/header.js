@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/header.css";
 import Recipe from "../componets/recipe";
+import Recommended from "./recommended";
 export default function Header() {
   const [search, setSearch] = useState("");
   const [mymeal, setMeal] = useState();
@@ -14,6 +15,21 @@ export default function Header() {
         });
     }
   };
+  const [recommended, setRecommended] = useState([]);
+
+  const fetchRecommendedData = () => {
+    fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setRecommended(data.meals);
+      });
+  };
+
+  useEffect(() => {
+    fetchRecommendedData();
+  }, []);
   return (
     <section className="bck">
       <div className="header">
@@ -30,7 +46,20 @@ export default function Header() {
       </div>
 
       <h1 className="normal-color">Recommended Recipes</h1>
-      <div className="recipes-box"></div>
+      <div className="recipes-box recommended">
+        {recommended.map((item) => {
+          item.quantity = 3;
+          return <Recommended data={item} />;
+        })}
+        {recommended.map((item) => {
+          item.quantity = 3;
+          return <Recommended data={item} />;
+        })}
+        {recommended.map((item) => {
+          item.quantity = 3;
+          return <Recommended data={item} />;
+        })}
+      </div>
       <h1 className="normal-color">Your search</h1>
       <div className="recipes-box">
         {mymeal == null ? (
