@@ -6,7 +6,7 @@ const Recipe = (getMeal) => {
     <div className="recipe">
       <div>
         <img src={getMeal.data.strMealThumb} />
-        <div className="category normal-color s font-link">
+        <div className="category normal-color s font-link letter-spacing">
           {getMeal.data.strCategory}
         </div>
       </div>

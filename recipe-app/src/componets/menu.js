@@ -11,12 +11,24 @@ export default function menu() {
       <nav>
         <li>
           <div className="home"></div>
-          Home
+          <p>Home</p>
         </li>
-        <li>Explore</li>
-        <li>Favorites</li>
-        <li>Help</li>
-        <li>Settings</li>
+        <li>
+          <div className="discover"></div>
+          <p>Explore</p>
+        </li>
+        <li>
+          <div className="favorite"></div>
+          <p>Favorites</p>
+        </li>
+        <li>
+          <div className="help"></div>
+          <p>Help</p>
+        </li>
+        <li>
+          <div className="settings"></div>
+          <p>Settings</p>
+        </li>
       </nav>
     </section>
   );

@@ -44,7 +44,9 @@ export default function Header() {
         </div>
       </div>
 
-      <h1 className="normal-color font-link">Recommended Recipes</h1>
+      <h1 className="normal-color font-link letter-spacing">
+        Recommended Recipes
+      </h1>
       <div className="recipes-box recommended">
         {recommended.map((item) => {
           return <Recipe data={item} />;
@@ -56,7 +58,7 @@ export default function Header() {
           return <Recipe data={item} />;
         })}
       </div>
-      <h1 className="normal-color font-link">Your search</h1>
+      <h1 className="normal-color font-link letter-spacing">Your search</h1>
       <div className="recipes-box">
         {mymeal == null ? (
           <p>Not Found</p>

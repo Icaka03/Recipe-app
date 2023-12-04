@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   input {
-    width: 80%;
+    width: 90%;
     display: block;
     border-radius: 10px;
     border: none;
@@ -21,7 +21,6 @@
     padding-left: 50px;
   }
   button {
-    margin-left: 5%;
     padding: 30px 30px;
     background-image: url("../assets/images/settings_logo.png");
     background-size: contain;
@@ -36,7 +35,7 @@
   justify-content: space-between;
   overflow: auto;
   white-space: nowrap;
-  max-width: 100vh;
+  width: 115vh;
 }
 
 .recipes-section {
