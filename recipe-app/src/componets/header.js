@@ -57,6 +57,12 @@ export default function Header() {
         {recommended.map((item) => {
           return <Recipe data={item} />;
         })}
+        {recommended.map((item) => {
+          return <Recipe data={item} />;
+        })}
+        {recommended.map((item) => {
+          return <Recipe data={item} />;
+        })}
       </div>
       <h1 className="normal-color font-link letter-spacing">Your search</h1>
       <div className="recipes-box">
